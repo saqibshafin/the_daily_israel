@@ -1,0 +1,61 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "development",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main/main_development.dart",
+            "args": [
+                "--flavor",
+                "development",
+                "--target",
+                "lib/main/main_development.dart",
+                "--dart-define",
+                "FLAVOR_DEEP_LINK_DOMAIN=",
+                "--dart-define",
+                "FLAVOR_DEEP_LINK_PATH=email_login",
+                "--dart-define",
+                "TWITTER_API_KEY=",
+                "--dart-define",
+                "TWITTER_API_SECRET=",
+                "--dart-define",
+                "TWITTER_REDIRECT_URI=the-daily-israel://"
+            ]
+        },
+        
+        {
+            "name": "production",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main/main_production.dart",
+            "args": [
+                "--flavor",
+                "production",
+                "--target",
+                "lib/main/main_production.dart",
+                "--dart-define",
+                "FLAVOR_DEEP_LINK_DOMAIN=",
+                "--dart-define",
+                "FLAVOR_DEEP_LINK_PATH=email_login",
+                "--dart-define",
+                "TWITTER_API_KEY=",
+                "--dart-define",
+                "TWITTER_API_SECRET=",
+                "--dart-define",
+                "TWITTER_REDIRECT_URI=the-daily-israel://"
+            ]
+        },
+        
+        {
+            "name": "Launch UI Gallery",
+            "request": "launch",
+            "type": "dart",
+            "program": "packages/app_ui/gallery/lib/main.dart"
+        }
+    ]
+}
